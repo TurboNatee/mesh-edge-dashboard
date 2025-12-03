@@ -32,7 +32,7 @@
       lastUpdate = timestamp;
       loading = false;
     } catch (err) {
-      console.error('❌ Failed to fetch data:', err);
+      console.error('Failed to fetch data:', err);
     }
   }
 
@@ -119,7 +119,8 @@
             <span> {nodeData[mac].hops} hops</span>
           </div>
 
-          <!-- Active Alert Glow -->
+          <!-- Active Alert Glow styling --> 
+
           {#if activeAlerts[mac]?.active}
             <div class="absolute inset-0 bg-red-500/10 animate-pulse rounded-3xl pointer-events-none"></div>
             <div class="absolute top-3 right-3 text-xs bg-red-500 text-white px-2 py-1 rounded-full shadow animate-pulse">
