@@ -1,0 +1,48 @@
+{
+	"name": "mesh-edge-dashboard",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check .",
+		"test:unit": "vitest",
+		"test": "npm run test:unit -- --run && npm run test:e2e",
+		"test:e2e": "playwright test"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.56.1",
+		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/kit": "^2.48.5",
+		"@sveltejs/vite-plugin-svelte": "^6.2.1",
+		"@tailwindcss/postcss": "^4.1.17",
+		"@tailwindcss/vite": "^4.1.17",
+		"@tsconfig/svelte": "^5.0.6",
+		"@vitest/browser-playwright": "^4.0.10",
+		"autoprefixer": "^10.4.22",
+		"playwright": "^1.56.1",
+		"postcss": "^8.5.6",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"prettier-plugin-tailwindcss": "^0.7.1",
+		"svelte": "^5.45.4",
+		"svelte-check": "^4.3.4",
+		"tailwindcss": "^4.1.17",
+		"typescript": "^5.9.3",
+		"vite": "^7.2.2",
+		"vitest": "^4.0.10",
+		"vitest-browser-svelte": "^2.0.1"
+	},
+	"dependencies": {
+		"@influxdata/influxdb-client": "^1.35.0",
+		"@influxdata/influxdb-client-apis": "^1.35.0",
+		"@influxdata/influxdb3-client": "^1.4.0",
+		"dotenv": "^17.2.3"
+	}
+}
