@@ -65,7 +65,7 @@
       <div class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
     </div>
   {:else if Object.keys(nodeData).length === 0}
-    <p class="text-gray-600 text-center mt-12">No active cups detected ☹️</p>
+    <p class="text-gray-600 text-center mt-12">No active cups detected</p>
   {:else}
     <!-- Cards -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full max-w-7xl">
